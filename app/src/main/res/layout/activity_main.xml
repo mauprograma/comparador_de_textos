@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_size_default"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/common_size_default"
+        android:paddingBottom="@dimen/common_size_default">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_size_default"
+            android:textSize="@dimen/text_size_medium"
+            android:text="@string/title_main"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFirstText"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_size_default"
+            android:layout_marginTop="@dimen/common_size_default"
+            android:hint="@string/hint_firstText"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="300"
+            app:helperText="@string/helper_text"
+            app:startIconDrawable="@drawable/ic_text_indicator">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieFirstText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:maxLength="@integer/text_max_length"
+                android:nextFocusForward="@id/tilSecondText"
+                android:textColor="@color/blue"
+                android:maxWidth="300dp"
+                android:layout_weight="2"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSecondText"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_size_default"
+            android:layout_marginTop="@dimen/common_size_default"
+            android:hint="@string/hint_secondText"
+            app:counterEnabled="true"
+            app:counterMaxLength="300"
+            app:helperText="@string/helper_text"
+            app:startIconDrawable="@drawable/ic_text_indicator">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieSecondText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionPrevious"
+                android:inputType="textMultiLine"
+                android:maxLength="@integer/text_max_length"
+                android:nextFocusForward="@id/tilFirstText"
+                android:textColor="@color/blue"
+                android:maxWidth="300dp"
+                android:layout_weight="2"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkboxLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_title" />
+
+
+        <TextView
+            android:id="@+id/tvCompareResult"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginVertical="@dimen/common_size_default"
+            android:text="@string/waiting_result"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/actionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/button_title"
+            app:icon="@drawable/ic_info" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

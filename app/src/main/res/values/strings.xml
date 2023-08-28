@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">El Comparador</string>
+    <string name="title_main">Ingresa dos textos a comparar</string>
+    <string name="hint_firstText">Primer texto</string>
+    <string name="hint_secondText">Segundo texto</string>
+    <string name="helper_text">Obligatorio</string>
+    <string name="dialog_title">Textos procesados</string>
+    <string name="dialog_ok">Comparar</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="waiting_result">ESPERANDO COMPARACIÓN</string>
+    <string name="match_result">TEXTOS IGUALES</string>
+    <string name="no_match_result">TEXTOS DISTINTOS</string>
+    <string name="operation_cancel">CANCELADO</string>
+    <string name="operation_compare">COMPARANDO</string>
+    <string name="clear_form">¡Formulario limpiado!</string>
+    <string name="about_title">Información de la APP</string>
+    <string name="about_opening">Más info</string>
+    <string name="app_version">Versión 1.1.1</string>
+    <string name="app_context">Argentina Programa - Desarrollo de aplicacione móviles</string>
+    <string name="app_author">Autor: Mauricio Javier Alonso</string>
+    <string name="app_author_visit_website">Visita mi sitio web</string>
+    <string name="app_author_website">https://patriotastucuman.netlify.app/pages/cvmauricio</string>
+    <string name="checkbox_title">Mayúsculas y minúsculas indistintas.</string>
+    <string name="button_title">Acerca de la app</string>
+</resources>
