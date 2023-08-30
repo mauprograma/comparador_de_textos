@@ -182,11 +182,11 @@ class MainActivity : AppCompatActivity() {
     }
     fun setGradientBackground(view: View, startColor: Int, endColor: Int) {
         val gradientDrawable = GradientDrawable(
-            GradientDrawable.Orientation.TOP_BOTTOM, // Set the gradient orientation
-            intArrayOf(startColor, endColor) // Set the start and end colors of the gradient
+            GradientDrawable.Orientation.TOP_BOTTOM,
+            intArrayOf(startColor, endColor)
         )
 
-        view.background = gradientDrawable // Set the gradient background to the view
+        view.background = gradientDrawable
     }
 }
 

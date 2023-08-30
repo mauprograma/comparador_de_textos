@@ -22,4 +22,6 @@
     <string name="app_author_website">https://patriotastucuman.netlify.app/pages/cvmauricio</string>
     <string name="checkbox_title">Mayúsculas y minúsculas indistintas.</string>
     <string name="button_title">Acerca de la app</string>
+    <string name="menu_item_button_compare">Comparar</string>
+    <string name="menu_item_button_clean">Limpiar</string>
 </resources>
